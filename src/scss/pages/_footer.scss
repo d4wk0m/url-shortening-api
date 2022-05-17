@@ -1,0 +1,48 @@
+@media screen and (max-width: 575.98px){
+    footer{
+        background-color: hsl(255, 11%, 22%);
+        color: white;
+        padding: 4rem 0;
+        h2{
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .card-group{
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .card{
+                h3{
+                    font-size: 1.6rem;
+                    text-align: center;
+                    margin-bottom: 2rem;
+                    margin-top: 2rem;
+                }
+                ul{
+                    list-style-type: none;
+                    padding: 0;
+                    li{
+                        text-align: center;
+                        margin: 1.5rem 0;
+                        a{
+                            color: hsl(0, 0%, 75%);
+                            text-decoration: none;
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+        .icons{
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin: 0 1rem;
+            }
+        }
+    }
+}

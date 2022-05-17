@@ -1,0 +1,152 @@
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 2rem!important;
+}
+
+@media screen and (max-width: 575.98px){
+    header{
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        padding-top: 3rem!important;
+        .hamburger .line{
+            width: 2rem;
+            height: 0.3rem;
+            border-radius: 2rem;
+            background-color: hsl(0, 0%, 75%);
+            display: block;
+            margin: 0.5rem auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        .hamburger.is-active {
+            .line:nth-child(2){
+                opacity: 0;
+            }
+            .line:nth-child(1){
+                transform: translateY(0.8rem) rotate(45deg);
+            }
+            .line:nth-child(3){
+                transform: translateY(-0.8rem) rotate(-45deg);
+            }
+        }
+        .menu{
+            height: 0px;
+            width: calc(100% - 4rem);
+            top: 120%;
+            position: absolute;
+            padding: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            background-color: hsl(257, 27%, 26%);
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            z-index: 2;
+            nav{
+                padding: 1rem 2rem;
+                ul{
+                    list-style-type: none;
+                    padding: 0;
+                    text-align: center;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.152);
+                    li{
+                        margin: 2.5rem 0;
+                        a{
+                            font-size: 1.75rem;
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .account-buttons{
+                padding: 1rem 2rem;
+                display: flex;
+                flex-direction: column;
+                button{
+                    font-size: 1.75rem;
+                    border: none;
+                    color: white;
+                    padding: 0.75rem;
+                }
+                .login{
+                    background-color: transparent;
+                }
+                .signup{
+                    margin-top: 1rem;
+                    background-color: hsl(180, 66%, 49%);
+                    border-radius: 5rem;
+                }
+            }
+        }
+        .menu.active{
+            height: 35rem;
+        }
+    }
+}
+
+@media screen and (min-width: 576px){
+    header{
+        .logo{
+            img{
+                width: 7rem;
+                display: block;
+            }
+        }
+        .hamburger{
+            display: none;
+        }
+        .menu{
+            margin: 0;
+            flex-grow: 1;
+            padding: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: row;
+            nav{
+                padding: 1rem 2rem;
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    padding: 0;
+                    text-align: center;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.152);
+                    li{
+                        margin: 0 0.75rem;
+                        a{
+                            font-size: 1rem;
+                            color: hsl(257, 7%, 63%);
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .account-buttons{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                margin-left: auto;
+                button{
+                    font-size: 1rem;
+                    border: none;
+                    color: white;
+                    padding: 0.25rem 1.5rem;
+                }
+                .login{
+                    background-color: transparent;
+                    color: hsl(257, 7%, 63%);
+                }
+                .signup{
+                    background-color: hsl(180, 66%, 49%);
+                    border-radius: 5rem;
+                }
+            }
+        }
+    }
+}

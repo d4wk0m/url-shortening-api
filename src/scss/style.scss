@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
+.App{
+    overflow: hidden;
+}
+
+@media screen and (max-width: 575.98px){
+    html{
+        font-size: 10px;
+    }
+    .container-sm{
+        width: 100vw;
+        padding: 0 2rem;
+    }
+    .container-full{
+        width: 100vw;
+    }
+}
+@media screen and (min-width: 576px){
+    html{
+        font-size: 12px;
+    }
+    .container-sm{
+        max-width: 540px;
+        margin: 0 auto;
+    }
+    .container-full{
+        width: 100vw;
+    }
+}
+@media screen and (min-width: 768px){
+    html{
+        font-size: 16px;
+    }
+    .container-sm{
+        max-width: 720px;
+    }
+}
+@media screen and (min-width: 992px){
+    html{
+        font-size: 18px;
+    }
+    .container-sm{
+        max-width: 960px;
+    }
+}
+@media screen and (min-width: 1200px){
+    html{
+        font-size: 19px;
+    }
+    .container-sm{
+        max-width: 1140px;
+    }
+}
+@media screen and (min-width: 1400px){
+    html{
+        font-size: 20px;
+    }
+    .container-sm{
+        max-width: 1320px;
+    }
+}
+
+@import './pages/menu';
+@import './pages/hero';
+@import './pages/statistics';
+@import './pages/getstarted';
+@import './pages/footer'
