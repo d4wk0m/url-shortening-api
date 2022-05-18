@@ -38,8 +38,6 @@ Users should be able to:
 - Solution - [Solution URL](https://github.com/d4wk0m/url-shortening-api)
 - Live site - [Live Site URL](https://d4wk0m.github.io/url-shortening-api/)
 
-## My process
-
 ### Built with
 
 - Semantic HTML5 markup
@@ -48,32 +46,6 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
-### What I learned
-
-<!-- ```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-``` -->
-
-
-### Continued development
-
-
-### Useful resources
-
-<!-- - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept. -->
 
 ## Author
 
