@@ -141,10 +141,16 @@ header{
                 .login{
                     background-color: transparent;
                     color: hsl(257, 7%, 63%);
+                    cursor: pointer;
                 }
                 .signup{
                     background-color: hsl(180, 66%, 49%);
                     border-radius: 5rem;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    &:hover{
+                        opacity: 0.5;
+                    }
                 }
             }
         }

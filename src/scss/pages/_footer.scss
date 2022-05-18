@@ -46,3 +46,52 @@
         }
     }
 }
+@media screen and (min-width: 576px){
+    footer{
+        background-color: hsl(255, 11%, 22%);
+        color: white;
+        padding: 4rem 0;
+        > div{
+            display: flex;
+            align-items: baseline;
+        }
+        h2{
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .card-group{
+            margin-left: auto;
+            display: flex;
+            flex-direction: row;
+            column-gap: 3rem;
+            .card{
+                h3{
+                    font-size: 1rem;
+                    margin-bottom: 2rem;
+                }
+                ul{
+                    list-style-type: none;
+                    padding: 0;
+                    li{
+                        margin: 0.5rem 0;
+                        a{
+                            color: hsl(0, 0%, 75%);
+                            text-decoration: none;
+                            font-size: 0.75rem;
+                        }
+                    }
+                }
+            }
+        }
+        .icons{
+            margin-left: 5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            img{
+                margin: 0 0.5rem;
+            }
+        }
+    }
+}

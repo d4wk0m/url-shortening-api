@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 
 export const ShortcodeContext = React.createContext()
 
@@ -12,20 +12,16 @@ export function ShortcodeProvider({ children }) {
     }
 
     async function getUrl(destination){
-        const options = {
-            method: 'POST',
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
-                apikey: '7bf85717a892456f993444c6d414b094'
-            },
-            body: JSON.stringify({destination: destination})
-            };
-        
-        return await fetch('https://api.rebrandly.com/v1/links', options)
-            .then(response => response.json())
-            .then(response => response.shortUrl)
-            .catch(err => console.error(err));
+        console.log('kur')
+        return await fetch('https://api.shrtco.de/v2/shorten?url='+destination, {method: 'POST'})
+            .then(async response => {
+                const data = await response.json()
+                if (response.ok === false){
+                    return "Wrong/Blocked Url"
+                }
+                return data.result.full_short_link
+            })
+            .catch(error => console.error(error));
     }
 
     return (

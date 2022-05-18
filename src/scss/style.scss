@@ -41,7 +41,7 @@ html{
 }
 @media screen and (min-width: 768px){
     html{
-        font-size: 16px;
+        font-size: 14px;
     }
     .container-sm{
         max-width: 720px;
@@ -49,18 +49,18 @@ html{
 }
 @media screen and (min-width: 992px){
     html{
-        font-size: 18px;
+        font-size: 16px;
     }
     .container-sm{
-        max-width: 960px;
+        max-width: 920px;
     }
 }
 @media screen and (min-width: 1200px){
     html{
-        font-size: 19px;
+        font-size: 18px;
     }
     .container-sm{
-        max-width: 1140px;
+        max-width: 1040px;
     }
 }
 @media screen and (min-width: 1400px){
@@ -68,7 +68,7 @@ html{
         font-size: 20px;
     }
     .container-sm{
-        max-width: 1320px;
+        max-width: 1160px;
     }
 }
 

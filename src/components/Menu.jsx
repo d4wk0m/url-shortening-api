@@ -22,9 +22,9 @@ function Menu() {
             <div className="menu container-sm" id="navbar">
                 <nav>
                     <ul>
-                        <li><a href="">Features</a></li>
-                        <li><a href="">Pricing</a></li>
-                        <li><a href="">Resources</a></li>
+                        <li><a href="https://github.com/d4wk0m" rel="noreferrer" target="_blank">Features</a></li>
+                        <li><a href="https://github.com/d4wk0m" rel="noreferrer" target="_blank">Pricing</a></li>
+                        <li><a href="https://github.com/d4wk0m" rel="noreferrer" target="_blank">Resources</a></li>
                     </ul>
                 </nav>
                 <div className="account-buttons">
